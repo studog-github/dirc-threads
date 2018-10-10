@@ -2,6 +2,16 @@
     "manifest_version": 2,
     "name": "DIRC Threads",
     "version": "0.1",
+
+    "description": "Adds threads to DIRC boards",
+
+    "author": "Stuart MacDonald",
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
     "content_scripts": [
         {
             "matches": [
@@ -11,12 +21,6 @@
             "js": ["jquery-3.3.1.slim.min.js", "content.js"]
         }
     ],
-    "background": {
-        "scripts": [
-            "background.js"
-        ],
-        "persistent": false
-    },
     "permissions": [
         "history"
     ]
