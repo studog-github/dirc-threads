@@ -23,7 +23,7 @@
             "matches": [
                 "https://www.dripinvesting.org/boards/Read.asp?MID=*&Thread=Yes"
             ],
-            "js": ["jquery-3.3.1.slim.min.js", "fg_threadHistory.js"],
+            "js": ["fg_threadHistory.js"],
             "run_at": "document_start"
         },
         {
