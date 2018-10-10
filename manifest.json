@@ -1,23 +1,23 @@
 {
-   "manifest_version": 2,
-   "name": "DIRC Threads",
-   "version": "0.1",
-   "content_scripts": [
-      {
-         "matches": [
-            "https://www.dripinvesting.org/boards/BoardMsgs.asp?BID=*",
-            "https://www.dripinvesting.org/boards/Read.asp?MID=*&Thread=Yes"
-         ],
-         "js": ["jquery-3.3.1.slim.min.js", "content.js"]
-      }
-   ],
-   "background": {
-      "scripts": [
-         "background.js"
-      ],
-      "persistent": false
-   },
-   "permissions": [
-      "history"
-   ]
+    "manifest_version": 2,
+    "name": "DIRC Threads",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.dripinvesting.org/boards/BoardMsgs.asp?BID=*",
+                "https://www.dripinvesting.org/boards/Read.asp?MID=*&Thread=Yes"
+            ],
+            "js": ["jquery-3.3.1.slim.min.js", "content.js"]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "history"
+    ]
 }
