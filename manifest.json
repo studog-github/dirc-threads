@@ -8,7 +8,7 @@
     "author": "Stuart MacDonald",
     "background": {
         "scripts": [
-            "background.js"
+            "bg_urlAdder.js"
         ],
         "persistent": false
     },
