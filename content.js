@@ -32,7 +32,8 @@ if (current_page.indexOf("https://www.dripinvesting.org/boards/BoardMsgs.asp?BID
     let message_url = current_page.split("&")[0];
     let href_attr = message_url.split("/")[4];
     let anchors = $("a[href='" + href_attr + "']");
-    anchors[0].scrollIntoView(true);
+    // the object forms' defaults are { block: "center" } which is sufficient
+    anchors[0].scrollIntoView({});
     //anchors[0].addClass("visited");
 console.log(anchors[0]);
 console.log(message_url);
