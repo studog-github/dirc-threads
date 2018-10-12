@@ -7,33 +7,23 @@
 
     "author": "Stuart MacDonald",
     "background": {
-        "scripts": [
-            "bg_urlAdder.js"
-        ],
+        "scripts": ["bg_urlAdder.js"],
         "persistent": false
     },
     "content_scripts": [
         {
-            "matches": [
-                "https://www.dripinvesting.org/boards/BoardMsgs.asp?BID=*"
-            ],
+            "matches": ["https://www.dripinvesting.org/boards/BoardMsgs.asp?BID=*"],
             "js": ["jquery-3.3.1.slim.min.js", "fg_threadAdder.js"]
         },
         {
-            "matches": [
-                "https://www.dripinvesting.org/boards/Read.asp?MID=*&Thread=Yes"
-            ],
+            "matches": ["https://www.dripinvesting.org/boards/Read.asp?MID=*&Thread=Yes"],
             "js": ["fg_threadHistory.js"],
             "run_at": "document_start"
         },
         {
-            "matches": [
-                "https://www.dripinvesting.org/boards/Read.asp?MID=*&Thread=Yes"
-            ],
+            "matches": ["https://www.dripinvesting.org/boards/Read.asp?MID=*&Thread=Yes"],
             "js": ["jquery-3.3.1.slim.min.js", "fg_threadHandler.js"]
         }
     ],
-    "permissions": [
-        "history"
-    ]
+    "permissions": ["history"]
 }
