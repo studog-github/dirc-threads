@@ -1,1 +1,13 @@
 ( ) Add a "Quote post" helper
+    ( ) Add a "Reply with quote" helper link on posts in thread
+    ( ) Do an inline reply, perhaps by replicating the existing reply page?
+    ( ) Do quoting of post line by line for easy editing
+        {
+            "matches": ["https://www.dripinvesting.org/boards/Post.asp?BID=5&MID=186444&T=0"],
+                         - T is for?
+                         - MID is for replying to a specific post
+                         - no MID is a new post on the specific BID
+                         - Post.asp isn't handled gracefully by the forums
+                         https://www.dripinvesting.org/boards/PostMessage.asp?Act=ViewOnly
+            "js": ["jquery-3.3.1.slim.min.js", "fg_threadAdder.js"]
+        },
