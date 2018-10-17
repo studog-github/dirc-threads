@@ -12,3 +12,5 @@
             "js": ["jquery-3.3.1.slim.min.js", "fg_threadAdder.js"]
         },
 ( ) Is it a bug to always stuff the history?
+( ) Fix the http vs https error in the main page
+( ) Linkify https URLS
