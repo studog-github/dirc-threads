@@ -14,3 +14,4 @@
 ( ) Is it a bug to always stuff the history?
 ( ) Linkify https URLS
 ( ) Boards link in threads view
+( ) In message view, scroll unreads into view, if needed
